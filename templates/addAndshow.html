@@ -3,6 +3,19 @@
 
 {% block content %}
 
-<p>geeet</p>
+<div class="row">
+    <div class="col-sm-5">
+        <h2>Add User</h2>
+
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Add" class="btn btn-success" >
+        </form>
+
+    </div>
+</div>
+
+
 
 {% endblock content %}
