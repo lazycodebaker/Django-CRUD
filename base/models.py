@@ -9,4 +9,3 @@ class User(models.Model):
     number = models.IntegerField()
     password = models.CharField(max_length=200)
 
-
