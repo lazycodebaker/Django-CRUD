@@ -3,6 +3,16 @@
 
 {% block content %}
 
-
+<div class="row">
+    <div class="col-sm-8">
+        <h4 class="alert alert-danger text-center">Update User</h4>
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{form.as_p}}
+            <input type="submit" value="Update" >
+            <a href="{% url 'addAndshow'%}" class="btn btn-success"></a>Back To Home</a>
+        </form>
+    </div>
+</div>
 
 {% endblock content %}
