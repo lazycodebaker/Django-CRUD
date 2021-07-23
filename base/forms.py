@@ -12,7 +12,7 @@ class UserRegister(forms.ModelForm):
             'email' : forms.EmailInput(attrs={'class':'form-control'}),
             'age' : forms.NumberInput(attrs={'class':'form-control'}),
             'number' : forms.NumberInput(attrs={'class':'form-control'}),
-            'password' : forms.TextInput(attrs={'class':'form-control'})
+            'password' : forms.PasswordInput(attrs={'class':'form-control'})
         }
 
 
